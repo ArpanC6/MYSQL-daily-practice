@@ -1,0 +1,18 @@
+CREATE DATABASE day01_db;
+USE day01_db;
+
+CREATE TABLE students (
+    id INT PRIMARY KEY,
+    name VARCHAR(50),
+    age INT,
+    course VARCHAR(30)
+);
+
+INSERT INTO students VALUES
+(1, 'Arpan', 20, 'CSE'),
+(2, 'Rahul', 21, 'ECE'),
+(3, 'Amit', 22, 'ME');
+
+SELECT * FROM students;
+SELECT name, course FROM students;
+SELECT * FROM students WHERE age > 20;
