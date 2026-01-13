@@ -55,7 +55,3 @@ The focus of Day 01 was to understand **basic database operations** and write my
 - How to sort query results
 - How to fetch unique values
 - How to limit output rows
-
-## Files
-- queries.sql
-- output.png
