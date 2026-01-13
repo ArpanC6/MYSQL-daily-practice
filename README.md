@@ -40,3 +40,22 @@ The focus of Day 01 was to understand **basic database operations** and write my
 - Inserted records into the table
 - Retrieved data using basic SELECT queries
 - Viewed query output in MySQL
+
+# Day 02 - MySQL Practice
+
+## Topics Covered
+- WHERE clause
+- AND / OR conditions
+- ORDER BY (ASC, DESC)
+- DISTINCT keyword
+- LIMIT
+
+## What I Learned
+- How to filter records using conditions
+- How to sort query results
+- How to fetch unique values
+- How to limit output rows
+
+## Files
+- queries.sql
+- output.png
