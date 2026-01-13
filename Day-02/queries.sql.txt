@@ -1,0 +1,41 @@
+Use the database
+USE day01_db;
+
+1. Show all students
+SELECT * FROM students;
+
+2. Filter students from CSE course
+SELECT * FROM students
+WHERE course = 'CSE';
+
+3. Students with age greater than 21
+SELECT * FROM students
+WHERE age > 21;
+
+4. Using AND condition
+SELECT * FROM students
+WHERE age > 20 AND course = 'CSE';
+
+5. Using OR condition
+SELECT * FROM students
+WHERE course = 'CSE' OR course = 'ECE';
+
+6. Order students by age (Ascending)
+SELECT * FROM students
+ORDER BY age;
+
+7. Order students by age (Descending)
+SELECT * FROM students
+ORDER BY age DESC;
+
+8. Show unique courses
+SELECT DISTINCT course FROM students;
+
+9. Limit result to first 2 records
+SELECT * FROM students
+LIMIT 2;
+
+10. Top 2 oldest students
+SELECT * FROM students
+ORDER BY age DESC
+LIMIT 2;
