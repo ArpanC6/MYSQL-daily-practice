@@ -56,13 +56,13 @@ The focus of Day 01 was to understand **basic database operations** and write my
 3) How to fetch unique values
 4) How to limit output rows
 
-Day 03 - MySQL Practice
+# Day 03 - MySQL Practice
 
-Topics Covered:
+## Topics Covered:
 1) Aggregate Functions (COUNT, SUM, AVG, MIN, MAX)
 2) GROUP BY clause
 
-Practice Summary:
+## Practice Summary:
 1) Calculated total students and marks
 2) Found average, minimum and maximum values
 3) Performed department-wise analysis using GROUP BY
