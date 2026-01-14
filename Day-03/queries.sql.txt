@@ -1,0 +1,29 @@
+1. Total number of students
+SELECT COUNT(*) FROM students;
+
+2. Total marks of all students
+SELECT SUM(marks) FROM students;
+
+3. Average marks
+SELECT AVG(marks) FROM students;
+
+4. Minimum marks
+SELECT MIN(marks) FROM students;
+
+5. Maximum marks
+SELECT MAX(marks) FROM students;
+
+6. Department-wise student count
+SELECT department, COUNT(*)
+FROM students
+GROUP BY department;
+
+7. Department-wise average marks
+SELECT department, AVG(marks)
+FROM students
+GROUP BY department;
+
+8. Department-wise highest marks
+SELECT department, MAX(marks)
+FROM students
+GROUP BY department;
