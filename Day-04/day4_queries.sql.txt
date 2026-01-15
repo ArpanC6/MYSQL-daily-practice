@@ -1,0 +1,23 @@
+USE practice_db;
+
+1) WHERE clause
+SELECT * FROM students WHERE department = 'CSE';
+SELECT name, marks FROM students WHERE marks > 80;
+SELECT * FROM students WHERE marks BETWEEN 70 AND 90;
+SELECT name, marks FROM students WHERE department='ECE' AND marks>85;
+
+2) ORDER BY
+SELECT * FROM students ORDER BY marks ASC;
+SELECT * FROM students ORDER BY marks DESC;
+
+3) LIMIT
+SELECT * FROM students ORDER BY marks DESC LIMIT 3;
+SELECT * FROM students ORDER BY marks ASC LIMIT 2;
+
+4) DISTINCT
+SELECT DISTINCT department FROM students;
+
+5) Combined
+SELECT name, marks FROM students
+WHERE department='CSE'
+ORDER BY marks DESC;
