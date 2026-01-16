@@ -78,3 +78,12 @@ The focus of Day 01 was to understand **basic database operations** and write my
 
 ### Tables used:
 1) students
+
+## Day 5 – LIKE, IN, NOT IN, BETWEEN
+
+### Practice Summary:
+1) Used LIKE for pattern matching
+2) Filtered multiple values using IN
+3) Excluded values using NOT IN
+4) Applied range filtering using BETWEEN
+5) Practiced real-world student data queries
