@@ -66,3 +66,15 @@ The focus of Day 01 was to understand **basic database operations** and write my
 1) Calculated total students and marks
 2) Found average, minimum and maximum values
 3) Performed department-wise analysis using GROUP BY
+
+## Day 4 – WHERE, ORDER BY, LIMIT, DISTINCT
+
+### What I learned:
+1) Filtering data using WHERE
+2) Sorting results using ORDER BY
+3) Fetching limited records using LIMIT
+4) Removing duplicates using DISTINCT
+5) Writing combined conditional queries
+
+### Tables used:
+1) students
