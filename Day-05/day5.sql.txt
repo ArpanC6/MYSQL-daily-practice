@@ -1,0 +1,26 @@
+USE practice_db;
+
+1) LIKE (starts with A)
+SELECT name, department, marks
+FROM students
+WHERE name LIKE 'A%';
+
+2) LIKE (contains)
+SELECT name
+FROM students
+WHERE name LIKE '%an%';
+
+3) IN
+SELECT name, department, marks
+FROM students
+WHERE department IN ('CSE', 'ECE');
+
+4) NOT IN
+SELECT name, department
+FROM students
+WHERE department NOT IN ('ME', 'CE');
+
+5) BETWEEN
+SELECT name, marks
+FROM students
+WHERE marks BETWEEN 60 AND 80;
