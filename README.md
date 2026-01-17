@@ -41,7 +41,7 @@ The focus of Day 01 was to understand **basic database operations** and write my
 4) Retrieved data using basic SELECT queries
 5) Viewed query output in MySQL
 
-### Day 02 - MySQL Practice
+# Day 02 - MySQL Practice
 
 ## Topics Covered
 1) WHERE clause
@@ -56,7 +56,7 @@ The focus of Day 01 was to understand **basic database operations** and write my
 3) How to fetch unique values
 4) How to limit output rows
 
-### Day 03 - MySQL Practice
+# Day 03 - MySQL Practice
 
 ## Topics Covered:
 1) Aggregate Functions (COUNT, SUM, AVG, MIN, MAX)
@@ -67,7 +67,7 @@ The focus of Day 01 was to understand **basic database operations** and write my
 2) Found average, minimum and maximum values
 3) Performed department-wise analysis using GROUP BY
 
-### Day 4 – WHERE, ORDER BY, LIMIT, DISTINCT
+# Day 4 – WHERE, ORDER BY, LIMIT, DISTINCT
 
 ### What I learned:
 1) Filtering data using WHERE
@@ -79,7 +79,7 @@ The focus of Day 01 was to understand **basic database operations** and write my
 ### Tables used:
 1) students
 
-### Day 5 – LIKE, IN, NOT IN, BETWEEN
+# Day 5 – LIKE, IN, NOT IN, BETWEEN
 
 ### Practice Summary:
 1) Used LIKE for pattern matching
@@ -88,7 +88,7 @@ The focus of Day 01 was to understand **basic database operations** and write my
 4) Applied range filtering using BETWEEN
 5) Practiced real-world student data queries
 
-### Day 6 – INNER JOIN
+# Day 6 – INNER JOIN
 
 ### Practice Summary:
 1) Created a second table (departments)
