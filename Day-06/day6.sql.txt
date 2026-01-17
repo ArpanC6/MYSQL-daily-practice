@@ -1,0 +1,29 @@
+USE practice_db;
+
+CREATE TABLE departments (
+    dept_id INT PRIMARY KEY,
+    dept_name VARCHAR(50)
+);
+
+INSERT INTO departments VALUES
+(1, 'CSE'),
+(2, 'ECE'),
+(3, 'ME'),
+(4, 'CE');
+
+SELECT s.name, s.marks, d.dept_name
+FROM students s
+INNER JOIN departments d
+ON s.department = d.dept_name;
+
+SELECT s.name, s.marks, d.dept_name
+FROM students s
+INNER JOIN departments d
+ON s.department = d.dept_name
+WHERE d.dept_name = 'CSE';
+
+SELECT s.name, s.marks, d.dept_name
+FROM students s
+INNER JOIN departments d
+ON s.department = d.dept_name
+WHERE s.marks > 70;
