@@ -87,3 +87,11 @@ The focus of Day 01 was to understand **basic database operations** and write my
 3) Excluded values using NOT IN
 4) Applied range filtering using BETWEEN
 5) Practiced real-world student data queries
+
+## Day 6 – INNER JOIN
+
+### Practice Summary:
+1) Created a second table (departments)
+2) Learned INNER JOIN between two tables
+3) Used table aliases
+4) Applied filters on joined data
