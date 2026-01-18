@@ -1,0 +1,28 @@
+USE practice_db;
+
+CREATE TABLE teachers (
+    teacher_id INT PRIMARY KEY,
+    teacher_name VARCHAR(50),
+    dept_name VARCHAR(50)
+);
+
+INSERT INTO teachers VALUES
+(1, 'Mr. Roy', 'CSE'),
+(2, 'Ms. Sen', 'ECE'),
+(3, 'Mr. Das', 'ME');
+
+SELECT d.dept_name, t.teacher_name
+FROM departments d
+LEFT JOIN teachers t
+ON d.dept_name = t.dept_name;
+
+SELECT d.dept_name
+FROM departments d
+LEFT JOIN teachers t
+ON d.dept_name = t.dept_name
+WHERE t.teacher_name IS NULL;
+
+SELECT t.teacher_name, d.dept_name
+FROM teachers t
+LEFT JOIN departments d
+ON t.dept_name = d.dept_name;
