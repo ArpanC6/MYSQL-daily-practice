@@ -96,7 +96,7 @@ The focus of Day 01 was to understand **basic database operations** and write my
 3) Used table aliases
 4) Applied filters on joined data
 
-## Day 7 – LEFT JOIN
+# Day 7 – LEFT JOIN
 
 ### Practice Summary:
 1) Learned LEFT JOIN
