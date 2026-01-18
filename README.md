@@ -67,7 +67,7 @@ The focus of Day 01 was to understand **basic database operations** and write my
 2) Found average, minimum and maximum values
 3) Performed department-wise analysis using GROUP BY
 
-## Day 4 – WHERE, ORDER BY, LIMIT, DISTINCT
+# Day 4 – WHERE, ORDER BY, LIMIT, DISTINCT
 
 ### What I learned:
 1) Filtering data using WHERE
@@ -79,7 +79,7 @@ The focus of Day 01 was to understand **basic database operations** and write my
 ### Tables used:
 1) students
 
-## Day 5 – LIKE, IN, NOT IN, BETWEEN
+# Day 5 – LIKE, IN, NOT IN, BETWEEN
 
 ### Practice Summary:
 1) Used LIKE for pattern matching
@@ -87,3 +87,11 @@ The focus of Day 01 was to understand **basic database operations** and write my
 3) Excluded values using NOT IN
 4) Applied range filtering using BETWEEN
 5) Practiced real-world student data queries
+
+# Day 6 – INNER JOIN
+
+### Practice Summary:
+1) Created a second table (departments)
+2) Learned INNER JOIN between two tables
+3) Used table aliases
+4) Applied filters on joined data
