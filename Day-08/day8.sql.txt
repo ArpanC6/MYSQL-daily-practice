@@ -1,0 +1,27 @@
+USE practice_db;
+
+CREATE TABLE students_marks (
+    student_id INT,
+    student_name VARCHAR(50),
+    dept_name VARCHAR(50),
+    marks INT
+);
+
+INSERT INTO students_marks VALUES
+(1, 'Arpan', 'CSE', 85),
+(2, 'Riya', 'CSE', 72),
+(3, 'Amit', 'ECE', 90),
+(4, 'Neha', 'ECE', 60),
+(5, 'Rahul', 'ME', 55),
+(6, 'Suman', 'ME', 70),
+(7, 'Puja', 'CSE', 95);
+
+SELECT dept_name, COUNT(*) FROM students_marks GROUP BY dept_name;
+
+SELECT dept_name, AVG(marks) FROM students_marks GROUP BY dept_name;
+
+SELECT dept_name, AVG(marks) FROM students_marks GROUP BY dept_name HAVING AVG(marks) > 70;
+
+SELECT dept_name, COUNT(*) FROM students_marks GROUP BY dept_name HAVING COUNT(*) > 2;
+
+SELECT dept_name, MAX(marks) FROM students_marks GROUP BY dept_name;
