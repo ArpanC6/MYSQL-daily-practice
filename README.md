@@ -95,3 +95,11 @@ The focus of Day 01 was to understand **basic database operations** and write my
 2) Learned INNER JOIN between two tables
 3) Used table aliases
 4) Applied filters on joined data
+
+# Day 7 – LEFT JOIN
+
+### Practice Summary:
+1) Learned LEFT JOIN
+2) Understood NULL values
+3) Found records with missing relationships
+4) Practiced real interview-style queries
