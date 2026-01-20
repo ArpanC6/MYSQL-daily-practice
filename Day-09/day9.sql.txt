@@ -1,0 +1,66 @@
+USE practice_db;
+
+-- =========================================
+-- Day 09: Subqueries Practice
+-- =========================================
+
+-- 1. Find students who scored above overall average marks
+SELECT *
+FROM students_marks
+WHERE marks > (
+    SELECT AVG(marks)
+    FROM students_marks
+);
+
+-- -----------------------------------------
+
+-- 2. Find student(s) who scored the highest marks
+SELECT *
+FROM students_marks
+WHERE marks = (
+    SELECT MAX(marks)
+    FROM students_marks
+);
+
+-- -----------------------------------------
+
+-- 3. Find students from the department
+--    having the highest average marks
+SELECT *
+FROM students_marks
+WHERE dept_name = (
+    SELECT dept_name
+    FROM students_marks
+    GROUP BY dept_name
+    ORDER BY AVG(marks) DESC
+    LIMIT 1
+);
+
+-- -----------------------------------------
+
+-- 4. Find students who scored more than
+--    the average marks of their department
+--    (Correlated Subquery)
+SELECT s1.*
+FROM students_marks s1
+WHERE marks > (
+    SELECT AVG(s2.marks)
+    FROM students_marks s2
+    WHERE s1.dept_name = s2.dept_name
+);
+
+-- -----------------------------------------
+
+-- 5. Find department(s) having maximum number of students
+--    using subquery
+SELECT dept_name
+FROM students_marks
+GROUP BY dept_name
+HAVING COUNT(*) = (
+    SELECT MAX(total_students)
+    FROM (
+        SELECT COUNT(*) AS total_students
+        FROM students_marks
+        GROUP BY dept_name
+    ) AS dept_count
+);
