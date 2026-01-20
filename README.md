@@ -103,3 +103,11 @@ The focus of Day 01 was to understand **basic database operations** and write my
 2) Understood NULL values
 3) Found records with missing relationships
 4) Practiced real interview-style queries
+
+# Day 8 – GROUP BY & HAVING
+
+### Practice Summary:
+1) Used GROUP BY with COUNT, AVG, MAX
+2) Learned HAVING for grouped conditions
+3) Performed department-wise analysis
+4) Practiced interview-level SQL queries
