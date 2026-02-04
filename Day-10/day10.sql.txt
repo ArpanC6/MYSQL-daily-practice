@@ -1,0 +1,54 @@
+USE practice_db;
+
+-- -----------------------------------------
+-- Day 10: Constraints & Keys
+-- -----------------------------------------
+
+-- 1. Create departments table with PRIMARY KEY
+CREATE TABLE departments (
+    dept_id INT PRIMARY KEY,
+    dept_name VARCHAR(50) UNIQUE NOT NULL
+);
+
+-- -----------------------------------------
+
+-- 2. Create students table with constraints
+CREATE TABLE students (
+    student_id INT PRIMARY KEY,
+    student_name VARCHAR(50) NOT NULL,
+    marks INT,
+    dept_id INT,
+    CONSTRAINT fk_dept
+    FOREIGN KEY (dept_id)
+    REFERENCES departments(dept_id)
+);
+
+-- -----------------------------------------
+
+-- 3. Insert values into departments table
+INSERT INTO departments VALUES
+(1, 'CSE'),
+(2, 'ECE'),
+(3, 'ME');
+
+-- -----------------------------------------
+
+-- 4. Insert values into students table
+INSERT INTO students VALUES
+(101, 'Arpan', 85, 1),
+(102, 'Riya', 72, 1),
+(103, 'Amit', 90, 2),
+(104, 'Neha', 60, 2),
+(105, 'Rahul', 55, 3);
+
+-- -----------------------------------------
+
+-- 5. View table structure
+DESC students;
+DESC departments;
+
+-- -----------------------------------------
+
+-- 6. View data
+SELECT * FROM students;
+SELECT * FROM departments;
