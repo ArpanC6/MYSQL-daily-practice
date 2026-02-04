@@ -111,3 +111,25 @@ The focus of Day 01 was to understand **basic database operations** and write my
 2) Learned HAVING for grouped conditions
 3) Performed department-wise analysis
 4) Practiced interview-level SQL queries
+
+# Day 9 – Subqueries (Nested Queries)
+
+### What I learned:
+1) What is a subquery (query inside another query)
+2) Difference between outer query and inner query
+3) How subqueries help in advanced data filtering
+4) How to use aggregate functions inside subqueries
+5) Concept of correlated subqueries
+
+### Topics Covered:
+1) Subquery with WHERE clause
+2) Single row subqueries
+3) Subqueries using AVG and MAX
+4) Correlated subqueries using table aliases
+
+### Practice Summary:
+1) Found students who scored above overall average marks
+2) Found student(s) with highest marks
+3) Identified department with highest average marks
+4) Retrieved students who scored more than their department average
+5) Found department(s) having maximum number of students
