@@ -1,0 +1,45 @@
+USE practice_db;
+
+-- -----------------------------------------
+-- Day 11: INNER JOIN
+-- -----------------------------------------
+
+-- 1. View base tables
+SELECT * FROM students;
+SELECT * FROM departments;
+
+-- -----------------------------------------
+
+-- 2. Basic INNER JOIN
+SELECT
+    s.student_id,
+    s.student_name,
+    s.marks,
+    d.dept_name
+FROM students s
+INNER JOIN departments d
+ON s.dept_id = d.dept_id;
+
+-- -----------------------------------------
+
+-- 3. INNER JOIN with WHERE
+SELECT
+    s.student_name,
+    d.dept_name,
+    s.marks
+FROM students s
+INNER JOIN departments d
+ON s.dept_id = d.dept_id
+WHERE d.dept_name = 'CSE';
+
+-- -----------------------------------------
+
+-- 4. INNER JOIN with GROUP BY
+SELECT
+    d.dept_name,
+    COUNT(s.student_id) AS total_students,
+    AVG(s.marks) AS avg_marks
+FROM departments d
+INNER JOIN students s
+ON d.dept_id = s.dept_id
+GROUP BY d.dept_name;
