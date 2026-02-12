@@ -1,135 +1,175 @@
-# Day 01 – Basic MySQL Practice 
+# MySQL Daily Practice Journey
 
-Today I started my MySQL daily practice journey.  
-The focus of Day 01 was to understand **basic database operations** and write my first SQL queries confidently.
+This repository documents my **day-wise MySQL learning journey**, starting from basic concepts and gradually moving towards advanced SQL topics with hands-on practice.
 
 
-## What I learned today
 
-### MySQL Basics
-1) What is a **database**
-2) Difference between **database** and **table**
-3) How MySQL stores data in tabular format
+##  Day 01 – Basic MySQL Practice
 
+### Focus
+Understanding **basic database operations** and writing first SQL queries confidently.
+
+### Topics Covered
+- What is a database
+- Difference between database and table
+- How MySQL stores data in tabular format
 
 ### Database Operations
-1) Creating a database using `CREATE DATABASE`
-2) Selecting a database using `USE`
-3) Viewing all databases using `SHOW DATABASES`
-
+- CREATE DATABASE
+- USE database
+- SHOW DATABASES
 
 ### Table Operations
-1) Creating tables using `CREATE TABLE`
-2) Understanding columns and data types
-3) Viewing table structure using `DESC`
-4) Viewing all tables using `SHOW TABLES`
+- CREATE TABLE
+- Understanding columns and data types
+- DESC table_name
+- SHOW TABLES
+
+### Queries Practiced
+- INSERT INTO
+- SELECT *
+- SELECT column_name
+- WHERE
+- LIMIT
 
 
-### Basic SQL Queries Practiced
-1) `INSERT INTO` → inserting data into table
-2) `SELECT * FROM table_name` → fetching all data
-3) `SELECT column_name FROM table_name`
-- Using `WHERE` condition
-- Using `LIMIT`
+
+##  Day 02 – Filtering & Sorting Data
+
+### Topics Covered
+- WHERE clause
+- AND / OR conditions
+- ORDER BY (ASC, DESC)
+- DISTINCT
+- LIMIT
+
+### Learnings
+- Filtering records using conditions
+- Sorting query results
+- Fetching unique values
+- Limiting output rows
 
 
-## Practice Summary
 
-1) Created a sample database
-2) Created a table with multiple columns
-3) Inserted records into the table
-4) Retrieved data using basic SELECT queries
-5) Viewed query output in MySQL
+## Day 03 – Aggregate Functions & GROUP BY
 
-# Day 02 - MySQL Practice
+### Topics Covered
+- COUNT
+- SUM
+- AVG
+- MIN
+- MAX
+- GROUP BY
 
-## Topics Covered
-1) WHERE clause
-2) AND / OR conditions
-3) ORDER BY (ASC, DESC)
-4) DISTINCT keyword
-5) LIMIT
+### Practice Summary
+- Calculated total students
+- Found average, minimum, and maximum marks
+- Department-wise analysis
 
-## What I Learned
-1) How to filter records using conditions
-2) How to sort query results
-3) How to fetch unique values
-4) How to limit output rows
 
-# Day 03 - MySQL Practice
 
-## Topics Covered:
-1) Aggregate Functions (COUNT, SUM, AVG, MIN, MAX)
-2) GROUP BY clause
+##  Day 04 – WHERE, ORDER BY, LIMIT, DISTINCT
 
-## Practice Summary:
-1) Calculated total students and marks
-2) Found average, minimum and maximum values
-3) Performed department-wise analysis using GROUP BY
+### Practice Summary
+- Advanced filtering using WHERE
+- Sorting data using ORDER BY
+- Limiting records using LIMIT
+- Removing duplicates using DISTINCT
+- Combined conditional queries
 
-# Day 4 – WHERE, ORDER BY, LIMIT, DISTINCT
+### Table Used
+- students
 
-### What I learned:
-1) Filtering data using WHERE
-2) Sorting results using ORDER BY
-3) Fetching limited records using LIMIT
-4) Removing duplicates using DISTINCT
-5) Writing combined conditional queries
 
-### Tables used:
-1) students
 
-# Day 5 – LIKE, IN, NOT IN, BETWEEN
+##  Day 05 – LIKE, IN, NOT IN, BETWEEN
 
-### Practice Summary:
-1) Used LIKE for pattern matching
-2) Filtered multiple values using IN
-3) Excluded values using NOT IN
-4) Applied range filtering using BETWEEN
-5) Practiced real-world student data queries
+### Topics Covered
+- LIKE (pattern matching)
+- IN
+- NOT IN
+- BETWEEN
 
-# Day 6 – INNER JOIN
+### Practice Summary
+- Pattern-based queries
+- Filtering multiple values
+- Excluding specific records
+- Range-based filtering
+- Real-world student queries
 
-### Practice Summary:
-1) Created a second table (departments)
-2) Learned INNER JOIN between two tables
-3) Used table aliases
-4) Applied filters on joined data
 
-# Day 7 – LEFT JOIN
 
-### Practice Summary:
-1) Learned LEFT JOIN
-2) Understood NULL values
-3) Found records with missing relationships
-4) Practiced real interview-style queries
+##  Day 06 – INNER JOIN
 
-# Day 8 – GROUP BY & HAVING
+### Topics Covered
+- INNER JOIN
+- Table aliases
+- Joining multiple tables
 
-### Practice Summary:
-1) Used GROUP BY with COUNT, AVG, MAX
-2) Learned HAVING for grouped conditions
-3) Performed department-wise analysis
-4) Practiced interview-level SQL queries
+### Practice Summary
+- Created departments table
+- Joined students and departments
+- Applied filters on joined data
 
-# Day 9 – Subqueries (Nested Queries)
 
-### What I learned:
-1) What is a subquery (query inside another query)
-2) Difference between outer query and inner query
-3) How subqueries help in advanced data filtering
-4) How to use aggregate functions inside subqueries
-5) Concept of correlated subqueries
 
-### Topics Covered:
-1) Subquery with WHERE clause
-2) Single row subqueries
-3) Subqueries using AVG and MAX
-4) Correlated subqueries using table aliases
+##  Day 07 – LEFT JOIN
 
-### Practice Summary:
-1) Found students who scored above overall average marks
-2) Found student(s) with highest marks
-3) Identified department with highest average marks
-4) Retrieved students who scored more than their department average
-5) Found department(s) having maximum number of students
+### Topics Covered
+- LEFT JOIN
+- NULL values in joins
+
+### Practice Summary
+- Retrieved all records from left table
+- Identified missing relationships
+- Practiced interview-style queries
+  
+
+
+##  Day 08 – GROUP BY & HAVING
+
+### Topics Covered
+- GROUP BY with aggregate functions
+- HAVING clause
+
+### Practice Summary
+- Department-wise student count
+- Average and maximum marks
+- Filtering grouped data
+
+
+##  Day 09 – Subqueries (Nested Queries)
+
+### Topics Covered
+- Subqueries
+- Single-row subqueries
+- Subqueries with AVG and MAX
+- Correlated subqueries
+
+### Practice Summary
+- Students scoring above overall average
+- Student(s) with highest marks
+- Department with highest average marks
+- Students scoring above department average
+- Department(s) with maximum students
+
+##  Day 10 – Constraints & Keys
+
+### Topics Covered
+- PRIMARY KEY
+- FOREIGN KEY
+- UNIQUE
+- NOT NULL
+- CHECK
+
+### Practice Summary
+- Created departments table with PRIMARY and UNIQUE constraints
+- Created students table with NOT NULL and CHECK constraints
+- Linked tables using FOREIGN KEY
+- Inserted valid data respecting constraints
+- Understood parent–child table relationship
+
+
+## Conclusion
+
+This 10-day journey helped me build a **strong foundation in MySQL**, covering core SQL concepts, relational database design, and interview-relevant queries.
