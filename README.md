@@ -173,3 +173,34 @@ Understanding **basic database operations** and writing first SQL queries confid
 ## Conclusion
 
 This 10-day journey helped me build a **strong foundation in MySQL**, covering core SQL concepts, relational database design, and interview-relevant queries.
+
+## Day 11 – JOIN Operations (INNER JOIN)
+
+Today I practiced **INNER JOIN**, which is used to retrieve data from **multiple related tables** in MySQL.
+
+
+
+### What I Learned
+- What is a JOIN in SQL
+- Why JOIN is required in relational databases
+- How tables are linked using PRIMARY KEY and FOREIGN KEY
+- How INNER JOIN returns only matching records
+
+
+
+### Topics Covered
+- INNER JOIN
+- Table aliases
+- INNER JOIN with WHERE clause
+- INNER JOIN with GROUP BY
+
+
+
+### Practice Summary
+- Joined `students` and `departments` tables using INNER JOIN
+- Retrieved student details along with department names
+- Filtered joined data using WHERE condition
+- Calculated department-wise student count and average marks
+- Understood real-world use of JOIN queries
+
+
