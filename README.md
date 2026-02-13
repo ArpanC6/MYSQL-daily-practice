@@ -203,4 +203,35 @@ Today I practiced **INNER JOIN**, which is used to retrieve data from **multiple
 - Calculated department-wise student count and average marks
 - Understood real-world use of JOIN queries
 
+# Day 12 – RIGHT JOIN & FULL JOIN (MySQL)
 
+Today I practiced **RIGHT JOIN** and understood the concept of  
+**FULL OUTER JOIN** in MySQL.
+
+---
+
+## What I Learned
+- RIGHT JOIN returns all records from the **right table**
+- NULL values appear when no matching record exists
+- MySQL does not support FULL JOIN directly
+- FULL JOIN can be simulated using **LEFT JOIN + UNION + RIGHT JOIN**
+
+---
+
+## Tables Used
+- students  
+- departments  
+
+---
+
+## Queries Practiced
+- RIGHT JOIN between students and departments  
+- Finding departments with no students  
+- Simulating FULL OUTER JOIN using UNION  
+
+---
+
+## Summary
+- Learned how to handle missing relationships  
+- Improved JOIN logic for interview questions  
+- Strengthened relational database understanding  
