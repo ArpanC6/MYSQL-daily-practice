@@ -1,0 +1,57 @@
+USE practice_db;
+
+-- ---------------------------------
+-- Day 12: RIGHT JOIN Practice
+-- ---------------------------------
+
+-- View existing tables
+SELECT * FROM students;
+SELECT * FROM departments;
+
+-- ---------------------------------
+-- RIGHT JOIN
+-- ---------------------------------
+-- Show all departments, even if no student is assigned
+
+SELECT 
+    s.student_id,
+    s.student_name,
+    s.marks,
+    d.dept_name
+FROM students s
+RIGHT JOIN departments d
+ON s.dept_id = d.dept_id;
+
+-- ---------------------------------
+-- RIGHT JOIN with WHERE
+-- ---------------------------------
+-- Find departments with no students
+
+SELECT 
+    d.dept_name,
+    s.student_name
+FROM students s
+RIGHT JOIN departments d
+ON s.dept_id = d.dept_id
+WHERE s.student_id IS NULL;
+
+-- ---------------------------------
+-- Simulating FULL OUTER JOIN
+-- (MySQL does not support FULL JOIN)
+-- ---------------------------------
+
+SELECT 
+    s.student_name,
+    d.dept_name
+FROM students s
+LEFT JOIN departments d
+ON s.dept_id = d.dept_id
+
+UNION
+
+SELECT 
+    s.student_name,
+    d.dept_name
+FROM students s
+RIGHT JOIN departments d
+ON s.dept_id = d.dept_id;
