@@ -1,0 +1,81 @@
+==============================
+MySQL – Day 13 Practical
+Subquery, EXISTS, CASE
+==============================
+
+-- Step 1: Create Database
+CREATE DATABASE day13_practice;
+USE day13_practice;
+
+-- Step 2: Create Employees Table
+CREATE TABLE employees (
+    emp_id INT PRIMARY KEY,
+    name VARCHAR(50),
+    department VARCHAR(50),
+    salary INT
+);
+
+-- Step 3: Insert Data
+INSERT INTO employees VALUES
+(1, 'Arpan', 'IT', 40000),
+(2, 'Rahul', 'HR', 28000),
+(3, 'Sneha', 'IT', 35000),
+(4, 'Amit', 'Finance', 30000),
+(5, 'Priya', 'IT', 45000),
+(6, 'Riya', 'HR', 25000);
+
+-----------------------------------------
+-- 1) Subquery Example
+-- Find employees earning more than average salary
+
+SELECT *
+FROM employees
+WHERE salary > (
+    SELECT AVG(salary) FROM employees
+);
+
+-----------------------------------------
+-- 2) Correlated Subquery
+-- Find employees earning more than department average
+
+SELECT e1.*
+FROM employees e1
+WHERE salary > (
+    SELECT AVG(salary)
+    FROM employees e2
+    WHERE e1.department = e2.department
+);
+
+-----------------------------------------
+-- 3) EXISTS Example
+-- Find departments that have at least one employee earning > 40000
+
+SELECT DISTINCT department
+FROM employees e1
+WHERE EXISTS (
+    SELECT *
+    FROM employees e2
+    WHERE e1.department = e2.department
+    AND salary > 40000
+);
+
+-----------------------------------------
+-- 4) CASE Example
+-- Categorize salary
+
+SELECT name, salary,
+CASE
+    WHEN salary > 35000 THEN 'High'
+    WHEN salary BETWEEN 30000 AND 35000 THEN 'Medium'
+    ELSE 'Low'
+END AS salary_category
+FROM employees;
+
+-----------------------------------------
+-- 5) GROUP BY + HAVING
+-- Find departments having more than 2 employees
+
+SELECT department, COUNT(*) AS total_employees
+FROM employees
+GROUP BY department
+HAVING COUNT(*) > 2;
