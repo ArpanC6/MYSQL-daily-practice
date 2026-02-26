@@ -235,3 +235,34 @@ Today I practiced **RIGHT JOIN** and understood the concept of
 - Learned how to handle missing relationships  
 - Improved JOIN logic for interview questions  
 - Strengthened relational database understanding  
+
+# Day 13 – Views & Indexes (MySQL)
+
+Today I practiced **Views** and **Indexes** to understand how MySQL  
+handles reusable queries and improves query performance.
+
+---
+
+## What I Learned
+- What is a VIEW and why it is used
+- Creating and using views
+- Updating data through views
+- What is an INDEX
+- How indexes improve query performance
+
+---
+
+## Topics Covered
+- CREATE VIEW
+- SELECT from VIEW
+- DROP VIEW
+- CREATE INDEX
+- SHOW INDEX
+
+---
+
+## Practice Summary
+- Created views for student and department data
+- Retrieved data using views instead of complex queries
+- Created indexes on frequently searched columns
+- Understood basic performance optimization concepts
