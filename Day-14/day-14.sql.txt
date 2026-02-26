@@ -1,0 +1,40 @@
+USE practice_db;
+
+-- -----------------------------
+-- Day 14: UPDATE & DELETE
+-- -----------------------------
+
+-- View current data
+SELECT * FROM students;
+
+-- -----------------------------
+-- UPDATE queries
+-- -----------------------------
+
+-- Update marks of a student
+UPDATE students
+SET marks = 88
+WHERE student_id = 101;
+
+-- Update department of a student
+UPDATE students
+SET dept_id = 2
+WHERE student_name = 'Riya';
+
+-- Increase marks of all CSE students
+UPDATE students
+SET marks = marks + 5
+WHERE dept_id = 1;
+
+-- -----------------------------
+-- DELETE queries
+-- -----------------------------
+
+-- Delete a student with low marks
+DELETE FROM students
+WHERE marks < 40;
+
+-- -----------------------------
+-- Final data check
+-- -----------------------------
+SELECT * FROM students;
