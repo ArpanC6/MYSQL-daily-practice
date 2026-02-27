@@ -281,3 +281,22 @@ Today I practiced working with **FOREIGN KEY constraints** in MySQL.
 ## Tables Used
 - departments
 - students
+
+# Day 15 – ON DELETE & ON UPDATE (MySQL)
+
+Today I practiced **Foreign Key actions** in MySQL to understand how changes in a parent table affect a child table.
+
+## What I learned
+- ON DELETE CASCADE removes dependent records automatically
+- ON UPDATE CASCADE updates foreign key values automatically
+- Maintains data consistency between related tables
+
+## What I practiced
+- Created parent and child tables with foreign key constraints
+- Inserted sample data
+- Tested DELETE and UPDATE operations
+- Observed automatic changes in related records
+
+## Tables Used
+- departments (parent)
+- students (child)
