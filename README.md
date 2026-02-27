@@ -241,7 +241,6 @@ Today I practiced **RIGHT JOIN** and understood the concept of
 Today I practiced **Views** and **Indexes** to understand how MySQL  
 handles reusable queries and improves query performance.
 
----
 
 ## What I Learned
 - What is a VIEW and why it is used
@@ -250,7 +249,6 @@ handles reusable queries and improves query performance.
 - What is an INDEX
 - How indexes improve query performance
 
----
 
 ## Topics Covered
 - CREATE VIEW
@@ -259,10 +257,27 @@ handles reusable queries and improves query performance.
 - CREATE INDEX
 - SHOW INDEX
 
----
 
 ## Practice Summary
 - Created views for student and department data
 - Retrieved data using views instead of complex queries
 - Created indexes on frequently searched columns
 - Understood basic performance optimization concepts
+
+# Day 14 – Foreign Key & Data Integrity
+
+Today I practiced working with **FOREIGN KEY constraints** in MySQL.
+
+## What I did
+- Verified parent table (`departments`) data
+- Inserted records into child table (`students`)
+- Fixed foreign key issues by ensuring correct table mapping
+- Successfully retrieved student records
+
+## Key Learning
+- Parent table must contain referenced values before inserting into child table
+- Table name consistency is critical in foreign key relationships
+
+## Tables Used
+- departments
+- students
