@@ -1,0 +1,81 @@
+USE sql_practice;
+
+-- ---------------------------------
+-- Day 15: ON DELETE & ON UPDATE
+-- ---------------------------------
+
+-- Drop tables if already exist (safe start)
+DROP TABLE IF EXISTS students;
+DROP TABLE IF EXISTS departments;
+
+-- ---------------------------------
+-- Create departments table (Parent)
+-- ---------------------------------
+CREATE TABLE departments (
+    dept_id INT PRIMARY KEY,
+    dept_name VARCHAR(50) NOT NULL
+);
+
+-- ---------------------------------
+-- Create students table (Child)
+-- Using ON DELETE & ON UPDATE
+-- ---------------------------------
+CREATE TABLE students (
+    student_id INT PRIMARY KEY,
+    student_name VARCHAR(50),
+    marks INT,
+    dept_id INT,
+    FOREIGN KEY (dept_id)
+        REFERENCES departments(dept_id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
+);
+
+-- ---------------------------------
+-- Insert data into departments
+-- ---------------------------------
+INSERT INTO departments VALUES
+(1, 'CSE'),
+(2, 'ECE'),
+(3, 'ME');
+
+-- ---------------------------------
+-- Insert data into students
+-- ---------------------------------
+INSERT INTO students VALUES
+(101, 'Arpan', 85, 1),
+(102, 'Riya', 72, 1),
+(103, 'Amit', 90, 2),
+(104, 'Neha', 60, 2),
+(105, 'Rahul', 55, 3);
+
+-- ---------------------------------
+-- View data
+-- ---------------------------------
+SELECT * FROM departments;
+SELECT * FROM students;
+
+-- ---------------------------------
+-- Test ON DELETE CASCADE
+-- Deleting department ECE
+-- ---------------------------------
+DELETE FROM departments WHERE dept_id = 2;
+
+-- ---------------------------------
+-- View result after delete
+-- ---------------------------------
+SELECT * FROM departments;
+SELECT * FROM students;
+
+-- ---------------------------------
+-- Test ON UPDATE CASCADE
+-- ---------------------------------
+UPDATE departments
+SET dept_id = 10
+WHERE dept_id = 1;
+
+-- ---------------------------------
+-- View final result
+-- ---------------------------------
+SELECT * FROM departments;
+SELECT * FROM students;
