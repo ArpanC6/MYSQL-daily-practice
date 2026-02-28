@@ -1,0 +1,51 @@
+USE sql_practice;
+
+-- ---------------------------------
+-- Day 16: CHECK, DEFAULT, UNIQUE
+-- ---------------------------------
+
+-- Clean start
+DROP TABLE IF EXISTS students;
+
+-- ---------------------------------
+-- Create table with constraints
+-- ---------------------------------
+CREATE TABLE students (
+    student_id INT PRIMARY KEY,
+    student_name VARCHAR(50) NOT NULL,
+    marks INT CHECK (marks >= 0 AND marks <= 100),
+    department VARCHAR(30) NOT NULL,
+    email VARCHAR(100) UNIQUE,
+    status VARCHAR(20) DEFAULT 'ACTIVE'
+);
+
+-- ---------------------------------
+-- Insert valid data
+-- ---------------------------------
+INSERT INTO students (student_id, student_name, marks, department, email)
+VALUES
+(1, 'Arpan', 85, 'CSE', 'arpan@gmail.com'),
+(2, 'Riya', 72, 'CSE', 'riya@gmail.com'),
+(3, 'Amit', 90, 'ECE', 'amit@gmail.com');
+
+-- ---------------------------------
+-- DEFAULT value test
+-- ---------------------------------
+INSERT INTO students (student_id, student_name, marks, department, email)
+VALUES
+(4, 'Neha', 65, 'ME', 'neha@gmail.com');
+
+-- ---------------------------------
+-- View data
+-- ---------------------------------
+SELECT * FROM students;
+
+-- ---------------------------------
+-- Constraint testing (do not run together)
+-- ---------------------------------
+
+-- CHECK constraint test (will fail)
+-- INSERT INTO students VALUES (5, 'Rahul', 150, 'CSE', 'rahul@gmail.com', 'ACTIVE');
+
+-- UNIQUE constraint test (will fail)
+-- INSERT INTO students VALUES (6, 'Suman', 70, 'ECE', 'arpan@gmail.com', 'ACTIVE');
