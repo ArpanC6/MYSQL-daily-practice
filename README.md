@@ -319,3 +319,22 @@ Today I practiced **data validation constraints** in MySQL to ensure clean and r
 
 ## Table Used
 - students
+
+# Day 17 – SQL Views
+
+Today I learned how to use **SQL Views** to simplify complex queries and improve readability.
+
+## What I learned
+- What is a View in SQL
+- Why Views are used
+- How Views store SELECT queries
+- How Views behave like tables
+
+## What I practiced
+- Created a View using JOIN
+- Retrieved data from the View
+- Applied filtering on the View
+- Listed all Views in the database
+
+## Key Concept
+Views help in writing clean, reusable and secure SQL queries.
