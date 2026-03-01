@@ -300,3 +300,22 @@ Today I practiced **Foreign Key actions** in MySQL to understand how changes in 
 ## Tables Used
 - departments (parent)
 - students (child)
+
+# Day 16 – SQL Constraints Practice
+
+Today I practiced **data validation constraints** in MySQL to ensure clean and reliable database records.
+
+## What I learned
+- NOT NULL ensures mandatory fields
+- UNIQUE prevents duplicate values
+- CHECK validates data range
+- DEFAULT assigns automatic values
+
+## What I practiced
+- Created a table using multiple constraints
+- Inserted valid records successfully
+- Tested constraint failures for invalid data
+- Understood how databases enforce rules internally
+
+## Table Used
+- students
