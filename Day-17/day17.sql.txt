@@ -1,0 +1,40 @@
+USE sql_practice;
+
+-- ---------------------------------
+-- Day 17: SQL VIEWS
+-- ---------------------------------
+
+-- Check tables
+SHOW TABLES;
+
+-- Normal JOIN query
+SELECT 
+    s.student_id,
+    s.student_name,
+    s.marks,
+    d.dept_name
+FROM students s
+JOIN departments d
+ON s.dept_id = d.dept_id;
+
+-- Create VIEW
+CREATE VIEW student_department_view AS
+SELECT 
+    s.student_id,
+    s.student_name,
+    s.marks,
+    d.dept_name
+FROM students s
+JOIN departments d
+ON s.dept_id = d.dept_id;
+
+-- Use VIEW
+SELECT * FROM student_department_view;
+
+-- Filter using VIEW
+SELECT * 
+FROM student_department_view
+WHERE marks > 80;
+
+-- Show all views
+SHOW FULL TABLES WHERE Table_type = 'VIEW';
