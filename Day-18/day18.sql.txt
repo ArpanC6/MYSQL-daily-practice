@@ -1,0 +1,25 @@
+USE sql_practice;
+
+-- ---------------------------------
+-- Day 18: SQL INDEX
+-- ---------------------------------
+
+-- Check data
+SELECT * FROM students;
+
+-- Search without index
+SELECT * 
+FROM students
+WHERE student_name = 'Arpan';
+
+-- Create index
+CREATE INDEX idx_student_name
+ON students(student_name);
+
+-- Search with index
+SELECT * 
+FROM students
+WHERE student_name = 'Arpan';
+
+-- Show all indexes
+SHOW INDEX FROM students;
