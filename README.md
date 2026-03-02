@@ -338,3 +338,21 @@ Today I learned how to use **SQL Views** to simplify complex queries and improve
 
 ## Key Concept
 Views help in writing clean, reusable and secure SQL queries.
+
+# Day 18 – SQL Index
+
+Today I learned about **SQL Indexes** and how they improve query performance.
+
+## What I learned
+- What is an Index in SQL
+- Why Index is used
+- How Index speeds up SELECT queries
+- How to create and check Indexes
+
+## What I practiced
+- Created an Index on student_name
+- Executed queries before and after Index
+- Viewed existing Indexes on a table
+
+## Key Concept
+Indexes make searching faster but use extra memory.
