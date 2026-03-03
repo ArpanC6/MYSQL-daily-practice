@@ -1,0 +1,29 @@
+USE sql_practice;
+
+-- ---------------------------------
+-- Day 19: SQL Transactions
+-- ---------------------------------
+
+SELECT * FROM students;
+
+START TRANSACTION;
+
+UPDATE students
+SET marks = marks + 10
+WHERE student_id = 101;
+
+SELECT * FROM students;
+
+ROLLBACK;
+
+SELECT * FROM students;
+
+START TRANSACTION;
+
+UPDATE students
+SET marks = marks + 5
+WHERE student_id = 102;
+
+COMMIT;
+
+SELECT * FROM students;
