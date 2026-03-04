@@ -356,3 +356,22 @@ Today I learned about **SQL Indexes** and how they improve query performance.
 
 ## Key Concept
 Indexes make searching faster but use extra memory.
+
+# Day 19 – SQL Transactions
+
+Today I practiced **SQL Transactions** to safely manage database changes.
+
+## What I learned
+- START TRANSACTION begins a transaction
+- COMMIT saves changes permanently
+- ROLLBACK cancels changes
+- SAVEPOINT allows partial rollback
+
+## What I practiced
+- Updated records inside a transaction
+- Used ROLLBACK to undo changes
+- Used COMMIT to save changes
+- Understood real-world transaction safety
+
+## Key Concept
+Transactions ensure data consistency and safety in databases.
