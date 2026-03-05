@@ -378,9 +378,9 @@ Transactions ensure data consistency and safety in databases.
 
 USE sql_practice;
 
--- ---------------------------------
--- Day 20: Stored Procedures
--- ---------------------------------
+
+# Day 20: Stored Procedures
+
 
 -- View students
 SELECT * FROM students;
