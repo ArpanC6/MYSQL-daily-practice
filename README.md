@@ -411,3 +411,21 @@ CALL get_students_above_marks(70);
 
 -- Show all procedures
 SHOW PROCEDURE STATUS WHERE Db = 'sql_practice';
+
+# Day 21 – MySQL Triggers
+
+Today I practiced **Triggers in MySQL**.
+
+## What I learned
+- What is a Trigger
+- How triggers automatically execute on table events
+- Difference between BEFORE and AFTER triggers
+
+## What I practiced
+- Created a log table
+- Created an AFTER INSERT trigger
+- Automatically stored inserted student names in log table
+- Verified trigger execution using SELECT query
+
+## Key Concept
+Triggers help automate actions in databases and are commonly used for logging, auditing, and enforcing business rules.
