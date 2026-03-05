@@ -375,3 +375,39 @@ Today I practiced **SQL Transactions** to safely manage database changes.
 
 ## Key Concept
 Transactions ensure data consistency and safety in databases.
+
+USE sql_practice;
+
+-- ---------------------------------
+-- Day 20: Stored Procedures
+-- ---------------------------------
+
+-- View students
+SELECT * FROM students;
+
+-- Change delimiter
+DELIMITER $$
+
+-- Procedure 1: Get all students
+CREATE PROCEDURE get_all_students()
+BEGIN
+    SELECT * FROM students;
+END $$
+
+-- Procedure 2: Students above given marks
+CREATE PROCEDURE get_students_above_marks(IN min_marks INT)
+BEGIN
+    SELECT * 
+    FROM students
+    WHERE marks > min_marks;
+END $$
+
+-- Reset delimiter
+DELIMITER ;
+
+-- Call procedures
+CALL get_all_students();
+CALL get_students_above_marks(70);
+
+-- Show all procedures
+SHOW PROCEDURE STATUS WHERE Db = 'sql_practice';
