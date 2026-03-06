@@ -1,0 +1,36 @@
+USE sql_practice;
+
+-- Day 22: CASE Statement
+
+-- View students table
+SELECT * FROM students;
+
+-- Categorize students based on marks
+
+SELECT 
+    student_id,
+    student_name,
+    marks,
+    
+    CASE
+        WHEN marks >= 80 THEN 'Excellent'
+        WHEN marks >= 60 THEN 'Good'
+        WHEN marks >= 40 THEN 'Average'
+        ELSE 'Needs Improvement'
+    END AS performance
+    
+FROM students;
+
+-- CASE with ORDER BY
+
+SELECT 
+    student_name,
+    marks,
+    
+    CASE
+        WHEN marks >= 75 THEN 'Top Performer'
+        ELSE 'Normal'
+    END AS category
+    
+FROM students
+ORDER BY marks DESC;
