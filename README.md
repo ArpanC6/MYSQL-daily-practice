@@ -1,13 +1,15 @@
 # MySQL Daily Practice Journey
 
-This repository documents my **day-wise MySQL learning journey**, starting from basic concepts and gradually moving towards advanced SQL topics with hands-on practice.
+This repository documents my **day-wise MySQL learning journey**, starting from **basic SQL concepts** and gradually moving towards **advanced database features** through hands-on practice in MySQL Workbench.
+
+The goal of this repository is to **build a strong foundation in SQL and relational databases** by practicing real queries every day.
 
 
 
-##  Day 01 – Basic MySQL Practice
+# Day 01 – Basic MySQL Practice
 
 ### Focus
-Understanding **basic database operations** and writing first SQL queries confidently.
+Understanding basic database operations and writing the first SQL queries confidently.
 
 ### Topics Covered
 - What is a database
@@ -34,7 +36,7 @@ Understanding **basic database operations** and writing first SQL queries confid
 
 
 
-##  Day 02 – Filtering & Sorting Data
+# Day 02 – Filtering & Sorting Data
 
 ### Topics Covered
 - WHERE clause
@@ -51,7 +53,7 @@ Understanding **basic database operations** and writing first SQL queries confid
 
 
 
-## Day 03 – Aggregate Functions & GROUP BY
+# Day 03 – Aggregate Functions & GROUP BY
 
 ### Topics Covered
 - COUNT
@@ -64,25 +66,25 @@ Understanding **basic database operations** and writing first SQL queries confid
 ### Practice Summary
 - Calculated total students
 - Found average, minimum, and maximum marks
-- Department-wise analysis
+- Performed department-wise analysis
 
 
 
-##  Day 04 – WHERE, ORDER BY, LIMIT, DISTINCT
+# Day 04 – WHERE, ORDER BY, LIMIT, DISTINCT
 
 ### Practice Summary
 - Advanced filtering using WHERE
-- Sorting data using ORDER BY
+- Sorting results using ORDER BY
 - Limiting records using LIMIT
-- Removing duplicates using DISTINCT
-- Combined conditional queries
+- Removing duplicate values using DISTINCT
+- Writing combined conditional queries
 
 ### Table Used
 - students
 
 
 
-##  Day 05 – LIKE, IN, NOT IN, BETWEEN
+# Day 05 – LIKE, IN, NOT IN, BETWEEN
 
 ### Topics Covered
 - LIKE (pattern matching)
@@ -91,15 +93,15 @@ Understanding **basic database operations** and writing first SQL queries confid
 - BETWEEN
 
 ### Practice Summary
-- Pattern-based queries
+- Pattern based queries
 - Filtering multiple values
 - Excluding specific records
-- Range-based filtering
+- Range based filtering
 - Real-world student queries
 
 
 
-##  Day 06 – INNER JOIN
+# Day 06 – INNER JOIN
 
 ### Topics Covered
 - INNER JOIN
@@ -108,25 +110,26 @@ Understanding **basic database operations** and writing first SQL queries confid
 
 ### Practice Summary
 - Created departments table
-- Joined students and departments
-- Applied filters on joined data
+- Joined students and departments tables
+- Retrieved combined information from multiple tables
+- Applied filtering on joined data
 
 
 
-##  Day 07 – LEFT JOIN
+# Day 07 – LEFT JOIN
 
 ### Topics Covered
 - LEFT JOIN
 - NULL values in joins
 
 ### Practice Summary
-- Retrieved all records from left table
+- Retrieved all records from the left table
 - Identified missing relationships
-- Practiced interview-style queries
-  
+- Practiced real interview-style join queries
 
 
-##  Day 08 – GROUP BY & HAVING
+
+# Day 08 – GROUP BY & HAVING
 
 ### Topics Covered
 - GROUP BY with aggregate functions
@@ -134,26 +137,29 @@ Understanding **basic database operations** and writing first SQL queries confid
 
 ### Practice Summary
 - Department-wise student count
-- Average and maximum marks
-- Filtering grouped data
+- Average and maximum marks by department
+- Filtering grouped results using HAVING
 
 
-##  Day 09 – Subqueries (Nested Queries)
+
+# Day 09 – Subqueries (Nested Queries)
 
 ### Topics Covered
 - Subqueries
-- Single-row subqueries
+- Single row subqueries
 - Subqueries with AVG and MAX
 - Correlated subqueries
 
 ### Practice Summary
-- Students scoring above overall average
-- Student(s) with highest marks
-- Department with highest average marks
-- Students scoring above department average
-- Department(s) with maximum students
+- Found students scoring above overall average
+- Identified student(s) with highest marks
+- Found department with highest average marks
+- Students scoring above their department average
+- Department(s) having maximum number of students
 
-##  Day 10 – Constraints & Keys
+
+
+# Day 10 – Constraints & Keys
 
 ### Topics Covered
 - PRIMARY KEY
@@ -170,15 +176,8 @@ Understanding **basic database operations** and writing first SQL queries confid
 - Understood parent–child table relationship
 
 
-## Conclusion
 
-This 10-day journey helped me build a **strong foundation in MySQL**, covering core SQL concepts, relational database design, and interview-relevant queries.
-
-## Day 11 – JOIN Operations (INNER JOIN)
-
-Today I practiced **INNER JOIN**, which is used to retrieve data from **multiple related tables** in MySQL.
-
-
+# Day 11 – JOIN Operations (INNER JOIN)
 
 ### What I Learned
 - What is a JOIN in SQL
@@ -186,228 +185,193 @@ Today I practiced **INNER JOIN**, which is used to retrieve data from **multiple
 - How tables are linked using PRIMARY KEY and FOREIGN KEY
 - How INNER JOIN returns only matching records
 
-
-
-### Topics Covered
-- INNER JOIN
-- Table aliases
-- INNER JOIN with WHERE clause
-- INNER JOIN with GROUP BY
-
-
-
 ### Practice Summary
-- Joined `students` and `departments` tables using INNER JOIN
-- Retrieved student details along with department names
-- Filtered joined data using WHERE condition
+- Joined students and departments tables
+- Retrieved student details with department names
+- Applied WHERE conditions on joined data
 - Calculated department-wise student count and average marks
-- Understood real-world use of JOIN queries
-
-## Day 12 – RIGHT JOIN & FULL JOIN (MySQL)
-
-Today I practiced **RIGHT JOIN** and understood the concept of  
-**FULL OUTER JOIN** in MySQL.
 
 
+
+# Day 12 – RIGHT JOIN & FULL JOIN (MySQL)
 
 ### What I Learned
-- RIGHT JOIN returns all records from the **right table**
+- RIGHT JOIN returns all records from the right table
 - NULL values appear when no matching record exists
 - MySQL does not support FULL JOIN directly
-- FULL JOIN can be simulated using **LEFT JOIN + UNION + RIGHT JOIN**
-
-
+- FULL JOIN can be simulated using LEFT JOIN + UNION + RIGHT JOIN
 
 ### Tables Used
-- students  
-- departments  
-
-
+- students
+- departments
 
 ### Queries Practiced
-- RIGHT JOIN between students and departments  
-- Finding departments with no students  
-- Simulating FULL OUTER JOIN using UNION  
-
-
+- RIGHT JOIN between students and departments
+- Finding departments with no students
+- Simulating FULL OUTER JOIN using UNION
 
 ### Summary
-- Learned how to handle missing relationships  
-- Improved JOIN logic for interview questions  
-- Strengthened relational database understanding  
-
-# Day 13 – Views & Indexes (MySQL)
-
-Today I practiced **Views** and **Indexes** to understand how MySQL  
-handles reusable queries and improves query performance.
+- Learned how to handle missing relationships
+- Improved JOIN logic for interview questions
+- Strengthened relational database understanding
 
 
-## What I Learned
+
+# Day 13 – Views & Indexes
+
+### What I Learned
 - What is a VIEW and why it is used
 - Creating and using views
 - Updating data through views
 - What is an INDEX
 - How indexes improve query performance
 
-
-## Topics Covered
-- CREATE VIEW
-- SELECT from VIEW
-- DROP VIEW
-- CREATE INDEX
-- SHOW INDEX
-
-
-## Practice Summary
+### Practice Summary
 - Created views for student and department data
 - Retrieved data using views instead of complex queries
 - Created indexes on frequently searched columns
-- Understood basic performance optimization concepts
+- Understood basic performance optimization
+
+
 
 # Day 14 – Foreign Key & Data Integrity
 
-Today I practiced working with **FOREIGN KEY constraints** in MySQL.
-
-## What I did
-- Verified parent table (`departments`) data
-- Inserted records into child table (`students`)
+### What I Did
+- Verified parent table (departments) data
+- Inserted records into child table (students)
 - Fixed foreign key issues by ensuring correct table mapping
-- Successfully retrieved student records
+- Retrieved student records successfully
 
-## Key Learning
-- Parent table must contain referenced values before inserting into child table
-- Table name consistency is critical in foreign key relationships
+### Key Learning
+Parent table must contain referenced values before inserting into child table.
 
-## Tables Used
-- departments
-- students
 
-# Day 15 – ON DELETE & ON UPDATE (MySQL)
 
-Today I practiced **Foreign Key actions** in MySQL to understand how changes in a parent table affect a child table.
+# Day 15 – ON DELETE & ON UPDATE
 
-## What I learned
+### What I Learned
 - ON DELETE CASCADE removes dependent records automatically
 - ON UPDATE CASCADE updates foreign key values automatically
-- Maintains data consistency between related tables
+- Maintains consistency between related tables
 
-## What I practiced
-- Created parent and child tables with foreign key constraints
+### Practice Summary
+- Created parent and child tables
 - Inserted sample data
 - Tested DELETE and UPDATE operations
 - Observed automatic changes in related records
 
-## Tables Used
-- departments (parent)
-- students (child)
+
 
 # Day 16 – SQL Constraints Practice
 
-Today I practiced **data validation constraints** in MySQL to ensure clean and reliable database records.
-
-## What I learned
+### What I Learned
 - NOT NULL ensures mandatory fields
 - UNIQUE prevents duplicate values
 - CHECK validates data range
 - DEFAULT assigns automatic values
 
-## What I practiced
-- Created a table using multiple constraints
-- Inserted valid records successfully
+### Practice Summary
+- Created tables using multiple constraints
+- Inserted valid records
 - Tested constraint failures for invalid data
 - Understood how databases enforce rules internally
 
-## Table Used
-- students
+
 
 # Day 17 – SQL Views
 
-Today I learned how to use **SQL Views** to simplify complex queries and improve readability.
-
-## What I learned
+### What I Learned
 - What is a View in SQL
 - Why Views are used
 - How Views store SELECT queries
 - How Views behave like tables
 
-## What I practiced
+### Practice Summary
 - Created a View using JOIN
 - Retrieved data from the View
 - Applied filtering on the View
 - Listed all Views in the database
 
-## Key Concept
-Views help in writing clean, reusable and secure SQL queries.
+### Key Concept
+Views help write clean, reusable, and secure SQL queries.
+
+
 
 # Day 18 – SQL Index
 
-Today I learned about **SQL Indexes** and how they improve query performance.
-
-## What I learned
-- What is an Index in SQL
+### What I Learned
+- What is an Index
 - Why Index is used
-- How Index speeds up SELECT queries
-- How to create and check Indexes
+- How Index improves SELECT query performance
+- How to create and inspect Indexes
 
-## What I practiced
+### Practice Summary
 - Created an Index on student_name
 - Executed queries before and after Index
-- Viewed existing Indexes on a table
+- Viewed existing Indexes on the table
 
-## Key Concept
-Indexes make searching faster but use extra memory.
+### Key Concept
+Indexes make searching faster but require extra memory.
+
+
 
 # Day 19 – SQL Transactions
 
-Today I practiced **SQL Transactions** to safely manage database changes.
-
-## What I learned
+### What I Learned
 - START TRANSACTION begins a transaction
 - COMMIT saves changes permanently
 - ROLLBACK cancels changes
 - SAVEPOINT allows partial rollback
 
-## What I practiced
-- Updated records inside a transaction
+### Practice Summary
+- Updated records inside transactions
 - Used ROLLBACK to undo changes
 - Used COMMIT to save changes
-- Understood real-world transaction safety
+- Practiced transaction safety concepts
 
-## Key Concept
-Transactions ensure data consistency and safety in databases.
 
-USE sql_practice;
 
--- ---------------------------------
--- Day 20: Stored Procedures
--- ---------------------------------
+# Day 20 – Stored Procedures
 
--- View students
-SELECT * FROM students;
+### What I Learned
+- What is a Stored Procedure
+- How procedures store reusable SQL logic
+- Using input parameters in procedures
 
--- Change delimiter
-DELIMITER $$
+### Practice Summary
+- Created procedure to retrieve all students
+- Created procedure to retrieve students above certain marks
+- Called procedures using CALL statement
+- Viewed procedures using SHOW PROCEDURE STATUS
 
--- Procedure 1: Get all students
-CREATE PROCEDURE get_all_students()
-BEGIN
-    SELECT * FROM students;
-END $$
 
--- Procedure 2: Students above given marks
-CREATE PROCEDURE get_students_above_marks(IN min_marks INT)
-BEGIN
-    SELECT * 
-    FROM students
-    WHERE marks > min_marks;
-END $$
 
--- Reset delimiter
-DELIMITER ;
+# Day 21 – MySQL Triggers
 
--- Call procedures
-CALL get_all_students();
-CALL get_students_above_marks(70);
+### What I Learned
+- What is a Trigger
+- How triggers automatically execute on table events
+- Difference between BEFORE and AFTER triggers
 
--- Show all procedures
-SHOW PROCEDURE STATUS WHERE Db = 'sql_practice';
+### Practice Summary
+- Created a log table
+- Created an AFTER INSERT trigger
+- Automatically stored inserted student names in the log table
+- Verified trigger execution using SELECT query
+
+### Key Concept
+Triggers help automate actions in databases and are commonly used for logging, auditing, and enforcing business rules.
+
+
+
+# Conclusion
+
+This **21-day MySQL practice journey** helped me build a strong foundation in:
+
+- SQL Queries
+- Relational Database Design
+- Data Integrity
+- Performance Optimization
+- Database Automation
+
+Through consistent daily practice, I improved my understanding of **real-world database concepts and interview-relevant SQL topics**.
