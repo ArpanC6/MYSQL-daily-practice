@@ -1,0 +1,32 @@
+USE sql_practice;
+
+-- Day 23: Window Function (ROW_NUMBER)
+
+-- View students table
+SELECT * FROM students;
+
+-- Ranking students based on marks
+
+SELECT 
+    student_id,
+    student_name,
+    marks,
+    
+    ROW_NUMBER() OVER (ORDER BY marks DESC) AS rank_position
+    
+FROM students;
+
+-- Department wise ranking
+
+SELECT 
+    student_id,
+    student_name,
+    dept_id,
+    marks,
+    
+    ROW_NUMBER() OVER (
+        PARTITION BY dept_id
+        ORDER BY marks DESC
+    ) AS dept_rank
+    
+FROM students;
