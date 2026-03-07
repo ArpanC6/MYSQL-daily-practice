@@ -397,3 +397,24 @@ Today I practiced **CASE statements in MySQL**, which allow conditional logic in
 
 ## Key Concept
 CASE statements allow SQL queries to apply conditional logic similar to if-else statements in programming.
+
+# Day 23 – SQL Window Functions (ROW_NUMBER)
+
+Today I practiced **Window Functions in MySQL**, specifically the ROW_NUMBER() function.
+
+## What I Learned
+- What are Window Functions
+- How ROW_NUMBER() assigns ranking
+- Difference between normal ranking and partition ranking
+- Using ORDER BY inside window functions
+
+## What I Practiced
+- Ranked students based on marks
+- Created department-wise ranking using PARTITION BY
+- Observed how ranking resets for each department
+
+## Table Used
+- students
+
+## Key Concept
+Window functions allow calculations across rows related to the current row without grouping the results.
