@@ -375,3 +375,25 @@ This **21-day MySQL practice journey** helped me build a strong foundation in:
 - Database Automation
 
 Through consistent daily practice, I improved my understanding of **real-world database concepts and interview-relevant SQL topics**.
+
+# Day 22 – SQL CASE Statement
+
+Today I practiced **CASE statements in MySQL**, which allow conditional logic inside SQL queries.
+
+## What I Learned
+- How CASE works in SQL
+- Using CASE for conditional categorization
+- Applying conditions based on marks
+- Combining CASE with ORDER BY
+
+## What I Practiced
+- Categorized students based on marks
+- Created performance labels such as Excellent, Good, Average
+- Used CASE inside SELECT queries
+- Sorted categorized data
+
+## Table Used
+- students
+
+## Key Concept
+CASE statements allow SQL queries to apply conditional logic similar to if-else statements in programming.
