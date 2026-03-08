@@ -1,0 +1,40 @@
+USE sql_practice;
+
+-- Day 24: RANK and DENSE_RANK
+
+-- View students
+SELECT * FROM students;
+
+-- RANK function
+SELECT 
+    student_id,
+    student_name,
+    marks,
+    
+    RANK() OVER (ORDER BY marks DESC) AS student_rank
+    
+FROM students;
+
+-- DENSE_RANK function
+SELECT 
+    student_id,
+    student_name,
+    marks,
+    
+    DENSE_RANK() OVER (ORDER BY marks DESC) AS dense_rank
+    
+FROM students;
+
+-- Department wise ranking
+SELECT 
+    student_id,
+    student_name,
+    dept_id,
+    marks,
+    
+    RANK() OVER (
+        PARTITION BY dept_id
+        ORDER BY marks DESC
+    ) AS dept_rank
+    
+FROM students;
