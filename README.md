@@ -418,3 +418,24 @@ Today I practiced **Window Functions in MySQL**, specifically the ROW_NUMBER() f
 
 ## Key Concept
 Window functions allow calculations across rows related to the current row without grouping the results.
+
+# Day 24 – SQL Ranking Functions
+
+Today I practiced **SQL Ranking Functions** in MySQL.
+
+## What I Learned
+- What is RANK() function
+- What is DENSE_RANK() function
+- Difference between RANK and DENSE_RANK
+- Department-wise ranking using PARTITION BY
+
+## What I Practiced
+- Ranked students based on marks
+- Compared RANK and DENSE_RANK results
+- Applied ranking inside departments
+
+## Table Used
+- students
+
+## Key Concept
+Ranking functions help analyze ordered data and are widely used in analytics and interview SQL questions.
