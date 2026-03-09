@@ -439,3 +439,24 @@ Today I practiced **SQL Ranking Functions** in MySQL.
 
 ## Key Concept
 Ranking functions help analyze ordered data and are widely used in analytics and interview SQL questions.
+
+# Day 25 – SQL LEAD() and LAG()
+
+Today I practiced **LEAD() and LAG() window functions** in MySQL.
+
+## What I Learned
+- What is LAG() function
+- What is LEAD() function
+- How to access previous and next row values
+- Using PARTITION BY with window functions
+
+## What I Practiced
+- Compared student marks with previous records
+- Retrieved next row values using LEAD
+- Performed department-wise comparison
+
+## Table Used
+- students
+
+## Key Concept
+LEAD and LAG functions help analyze sequential data by accessing values from previous or next rows.
