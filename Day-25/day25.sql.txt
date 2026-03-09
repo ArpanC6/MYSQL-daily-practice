@@ -1,0 +1,43 @@
+USE sql_practice;
+
+-- Day 25: LEAD and LAG Functions
+
+-- View students table
+SELECT * FROM students;
+
+-- LAG function (previous row value)
+
+SELECT 
+    student_id,
+    student_name,
+    marks,
+    
+    LAG(marks) OVER (ORDER BY marks DESC) AS previous_marks
+    
+FROM students;
+
+-- LEAD function (next row value)
+
+SELECT 
+    student_id,
+    student_name,
+    marks,
+    
+    LEAD(marks) OVER (ORDER BY marks DESC) AS next_marks
+    
+FROM students;
+
+-- Department wise comparison
+
+SELECT 
+    student_id,
+    student_name,
+    dept_id,
+    marks,
+    
+    LAG(marks) OVER (
+        PARTITION BY dept_id
+        ORDER BY marks DESC
+    ) AS previous_student_marks
+    
+FROM students;
