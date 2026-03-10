@@ -1,0 +1,38 @@
+USE sql_practice;
+
+-- Day 26: Common Table Expression (CTE)
+
+-- View students
+SELECT * FROM students;
+
+-- Simple CTE example
+
+WITH student_marks AS (
+    SELECT student_name, marks
+    FROM students
+)
+
+SELECT *
+FROM student_marks;
+
+-- CTE with condition
+
+WITH high_marks AS (
+    SELECT student_name, marks
+    FROM students
+    WHERE marks > 70
+)
+
+SELECT *
+FROM high_marks;
+
+-- CTE with aggregation
+
+WITH avg_marks AS (
+    SELECT dept_id, AVG(marks) AS average_marks
+    FROM students
+    GROUP BY dept_id
+)
+
+SELECT *
+FROM avg_marks;
