@@ -460,3 +460,24 @@ Today I practiced **LEAD() and LAG() window functions** in MySQL.
 
 ## Key Concept
 LEAD and LAG functions help analyze sequential data by accessing values from previous or next rows.
+
+# Day 26 – SQL Common Table Expression (CTE)
+
+Today I practiced **Common Table Expressions (CTE)** in MySQL.
+
+## What I Learned
+- What is a CTE
+- How CTE creates temporary result sets
+- How CTE improves query readability
+- Using CTE with filtering and aggregation
+
+## What I Practiced
+- Created simple CTE queries
+- Filtered student records using CTE
+- Calculated department-wise average marks using CTE
+
+## Table Used
+- students
+
+## Key Concept
+CTE allows complex SQL queries to be written in a cleaner and more readable way.
