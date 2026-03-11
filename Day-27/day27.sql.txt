@@ -1,0 +1,42 @@
+USE sql_practice;
+
+-- Day 27: Subquery vs CTE
+
+-- View students
+SELECT * FROM students;
+
+-- Subquery example
+SELECT 
+    student_id,
+    student_name,
+    marks
+FROM students
+WHERE marks > (
+    SELECT AVG(marks)
+    FROM students
+);
+
+-- Same problem using CTE
+WITH avg_marks AS (
+    SELECT AVG(marks) AS average_marks
+    FROM students
+)
+
+SELECT 
+    student_id,
+    student_name,
+    marks
+FROM students, avg_marks
+WHERE students.marks > avg_marks.average_marks;
+
+-- Department wise comparison using subquery
+SELECT 
+    student_name,
+    marks,
+    dept_id
+FROM students s
+WHERE marks > (
+    SELECT AVG(marks)
+    FROM students
+    WHERE dept_id = s.dept_id
+);
