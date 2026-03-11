@@ -481,3 +481,24 @@ Today I practiced **Common Table Expressions (CTE)** in MySQL.
 
 ## Key Concept
 CTE allows complex SQL queries to be written in a cleaner and more readable way.
+
+# Day 27 – Subquery vs CTE
+
+Today I practiced **Subqueries and Common Table Expressions (CTE)** in MySQL and compared how the same problem can be solved using both approaches.
+
+## What I Learned
+- What is a Subquery
+- What is a CTE
+- Difference between Subquery and CTE
+- How CTE improves readability
+
+## What I Practiced
+- Retrieved students scoring above average marks using subquery
+- Solved the same problem using CTE
+- Compared student marks with department average
+
+## Table Used
+- students
+
+## Key Concept
+Subqueries are useful for nested logic, while CTEs make complex queries easier to read and maintain.
