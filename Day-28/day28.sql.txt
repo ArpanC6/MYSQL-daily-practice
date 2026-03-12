@@ -1,0 +1,30 @@
+USE sql_practice;
+
+-- Day 28: SQL Interview Queries
+
+-- View students
+SELECT * FROM students;
+
+-- Second highest marks
+SELECT MAX(marks) AS second_highest_marks
+FROM students
+WHERE marks < (
+    SELECT MAX(marks)
+    FROM students
+);
+
+-- Top 3 students
+SELECT 
+    student_id,
+    student_name,
+    marks
+FROM students
+ORDER BY marks DESC
+LIMIT 3;
+
+-- Highest marks in each department
+SELECT 
+    dept_id,
+    MAX(marks) AS highest_marks
+FROM students
+GROUP BY dept_id;
