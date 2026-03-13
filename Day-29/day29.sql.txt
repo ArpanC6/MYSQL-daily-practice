@@ -1,0 +1,31 @@
+USE sql_practice;
+
+-- Day 29: Detecting Duplicate Records
+
+-- View students table
+SELECT * FROM students;
+
+-- Find duplicate student names
+SELECT 
+    student_name,
+    COUNT(*) AS total_count
+FROM students
+GROUP BY student_name
+HAVING COUNT(*) > 1;
+
+-- Show duplicate records
+SELECT *
+FROM students
+WHERE student_name IN (
+    SELECT student_name
+    FROM students
+    GROUP BY student_name
+    HAVING COUNT(*) > 1
+);
+
+-- Concept: Remove duplicate records
+DELETE s1
+FROM students s1
+JOIN students s2
+ON s1.student_name = s2.student_name
+AND s1.student_id > s2.student_id;
