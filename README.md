@@ -502,3 +502,23 @@ Today I practiced **Subqueries and Common Table Expressions (CTE)** in MySQL and
 
 ## Key Concept
 Subqueries are useful for nested logic, while CTEs make complex queries easier to read and maintain.
+
+# Day 28 – SQL Interview Query Practice
+
+Today I practiced some common **SQL interview queries** using the students table.
+
+## What I Learned
+- How to find the second highest value in SQL
+- How to retrieve top records using ORDER BY and LIMIT
+- How to perform department-wise analysis using GROUP BY
+
+## What I Practiced
+- Found second highest marks using subquery
+- Retrieved top 3 students based on marks
+- Calculated highest marks for each department
+
+## Table Used
+- students
+
+## Key Concept
+Interview SQL questions often test understanding of subqueries, sorting, and aggregation functions.
