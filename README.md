@@ -522,3 +522,24 @@ Today I practiced some common **SQL interview queries** using the students table
 
 ## Key Concept
 Interview SQL questions often test understanding of subqueries, sorting, and aggregation functions.
+
+# Day 29 – Detecting Duplicate Records in SQL
+
+Today I practiced how to detect duplicate records in SQL tables.
+
+## What I Learned
+- What are duplicate records in databases
+- How to detect duplicates using GROUP BY and HAVING
+- How to retrieve duplicate rows using subqueries
+- Basic concept of removing duplicate records
+
+## What I Practiced
+- Identified duplicate student names
+- Retrieved duplicate rows from the students table
+- Learned the SQL logic used to remove duplicates
+
+## Table Used
+- students
+
+## Key Concept
+Duplicate detection is important for maintaining clean and reliable database records.
