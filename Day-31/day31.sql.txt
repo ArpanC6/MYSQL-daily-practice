@@ -1,0 +1,28 @@
+USE student_project;
+
+-- Day 31: Running Total (Window Function)
+
+-- Create table
+CREATE TABLE student_marks (
+    id INT PRIMARY KEY,
+    student_name VARCHAR(50),
+    marks INT
+);
+
+-- Insert data
+INSERT INTO student_marks VALUES
+(1,'Arpan',55),
+(2,'Riya',60),
+(3,'Amit',70),
+(4,'Neha',85);
+
+-- Running total query
+SELECT 
+    student_name,
+    marks,
+    
+    SUM(marks) OVER (
+        ORDER BY id
+    ) AS running_total
+    
+FROM student_marks;
