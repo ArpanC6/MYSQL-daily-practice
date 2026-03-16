@@ -1,0 +1,30 @@
+USE student_project;
+
+-- Day 32: NTILE Window Function
+
+-- View table
+SELECT * FROM student_marks;
+
+-- Divide students into 4 groups based on marks
+
+SELECT 
+    student_name,
+    marks,
+    
+    NTILE(4) OVER (
+        ORDER BY marks DESC
+    ) AS performance_group
+    
+FROM student_marks;
+
+-- Find top performers
+
+SELECT *
+FROM (
+    SELECT 
+        student_name,
+        marks,
+        NTILE(4) OVER (ORDER BY marks DESC) AS performance_group
+    FROM student_marks
+) AS ranked_students
+WHERE performance_group = 1;
