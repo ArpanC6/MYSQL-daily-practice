@@ -1,0 +1,43 @@
+USE student_project;
+
+-- Day 33: FIRST_VALUE & LAST_VALUE
+
+-- View table
+SELECT * FROM student_marks;
+
+-- FIRST_VALUE
+SELECT 
+    student_name,
+    marks,
+    
+    FIRST_VALUE(marks) OVER (
+        ORDER BY marks DESC
+    ) AS highest_marks
+    
+FROM student_marks;
+
+-- LAST_VALUE
+SELECT 
+    student_name,
+    marks,
+    
+    LAST_VALUE(marks) OVER (
+        ORDER BY marks DESC
+        ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING
+    ) AS lowest_marks
+    
+FROM student_marks;
+
+-- Combined query
+SELECT 
+    student_name,
+    marks,
+    
+    FIRST_VALUE(marks) OVER (ORDER BY marks DESC) AS highest_marks,
+    
+    LAST_VALUE(marks) OVER (
+        ORDER BY marks DESC
+        ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING
+    ) AS lowest_marks
+    
+FROM student_marks;
