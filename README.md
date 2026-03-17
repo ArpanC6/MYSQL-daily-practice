@@ -581,3 +581,23 @@ Today I practiced the concept of **Running Total using SQL Window Functions**.
 
 ## Key Concept
 Running totals are widely used in analytics and reporting queries to track cumulative values.
+
+# Day 32 – SQL NTILE() Window Function
+
+Today I practiced the NTILE() window function in MySQL.
+
+## What I Learned
+- What NTILE() does
+- How data can be divided into equal groups
+- How NTILE is used for performance segmentation
+
+## What I Practiced
+- Divided students into 4 performance groups
+- Ranked students based on marks
+- Retrieved top performing students
+
+## Table Used
+- student_marks
+
+## Key Concept
+NTILE() helps divide ordered data into equal segments, commonly used for quartile and percentile analysis.
