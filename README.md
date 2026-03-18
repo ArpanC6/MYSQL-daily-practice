@@ -601,3 +601,24 @@ Today I practiced the NTILE() window function in MySQL.
 
 ## Key Concept
 NTILE() helps divide ordered data into equal segments, commonly used for quartile and percentile analysis.
+
+# Day 33 – SQL FIRST_VALUE() & LAST_VALUE()
+
+Today I practiced FIRST_VALUE() and LAST_VALUE() window functions in MySQL.
+
+## What I Learned
+- What FIRST_VALUE() does
+- What LAST_VALUE() does
+- Importance of window frame in LAST_VALUE()
+- Using window functions for analytics
+
+## What I Practiced
+- Retrieved highest marks using FIRST_VALUE()
+- Retrieved lowest marks using LAST_VALUE()
+- Combined both in a single query
+
+## Table Used
+- student_marks
+
+## Key Concept
+Window functions like FIRST_VALUE and LAST_VALUE help analyze ordered datasets efficiently.
