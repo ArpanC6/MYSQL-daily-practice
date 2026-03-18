@@ -622,3 +622,23 @@ Today I practiced FIRST_VALUE() and LAST_VALUE() window functions in MySQL.
 
 ## Key Concept
 Window functions like FIRST_VALUE and LAST_VALUE help analyze ordered datasets efficiently.
+
+# Day 34 – SQL Interview Queries (Top N & Ranking)
+
+Today I practiced important SQL interview questions.
+
+## What I Learned
+- How to find top records per group
+- Difference between ROW_NUMBER() and RANK()
+- How to solve 2nd highest problems
+
+## What I Practiced
+- Top student per department
+- 2nd highest student per department
+- Overall 2nd highest marks
+
+## Table Used
+- dept_marks
+
+## Key Concept
+Window functions help solve complex ranking problems efficiently in SQL interviews.
